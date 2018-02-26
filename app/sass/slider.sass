@@ -1,0 +1,40 @@
+.slide-1
+	background-image: url(../img/slide.png) 
+.slide-2
+	background-image: url(../img/slide2.png)
+
+.slides__item.active
+	opacity: 1
+.slides__item
+	opacity: 0
+	transition: opacity 2s ease
+
+.slider__ctrls
+	button
+		position: relative
+		display: block
+		width: 33px
+		height: 60px
+		background-color: #d1d1d1
+		border: none
+		opacity: .8
+		&:focus
+			outline: none
+		&:hover
+			opacity: 1
+		&:after
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			width: 25px
+			height: 25px
+			border-top: 4px solid black
+			border-right: 4px solid black
+			transform: translate(-70%, -50%) rotate(45deg) 
+		&:first-child
+			&:after
+				transform: translate(-20%, -50%) rotate(-135deg) 
+		
+			
+		 

@@ -1,0 +1,75 @@
+@import "reset", "fonts", "grid", "slider", "popup"
+
+header
+	background-color: #dcdcdc 
+	nav
+		background-color: #777777
+		a
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				bottom: 2px
+				left: 0
+				height: 2px
+				width: 0
+				transition: width .15s linear
+				background-color: white					
+		a:hover
+			&:after
+				width: 100%
+				right: 0
+		li
+			position: relative
+			&:not(:last-child)
+				&:before
+					content: ''
+					position: absolute
+					right: 0
+					top: 6px
+					bottom: 6px
+					width: 2px
+					background-color: white 
+
+.contacts
+	button
+		background-color: transparent
+		border: none
+
+.slides__item
+	background-position: center center
+	background-size: cover 
+	
+footer
+	background-color: #767676
+	
+.price-list
+	transition: all .5s ease
+	opacity: .8
+	&:hover
+		transform: translateY(-5px)
+		opacity: 1
+	span
+		transition: color .5s ease
+
+
+.item
+	background-color: #dcdcdc 
+	&__buy
+		margin-right: -5px
+		margin-bottom: -5px
+		button
+			background-color: transparent
+			padding: 5px
+			border: none
+			transition: background-color .2s ease
+	&:hover
+		.item__buy
+			button
+				background-color: #444444
+
+.divider
+	background-color: #777777
+		
+
+			
